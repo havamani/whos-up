@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd 
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:component-scan base-package="com.whosup.resource" />
+	<context:component-scan base-package="com.whosup.common" />
+
+	<bean id="networkService" class="com.whosup.service.NetworkServiceImpl" />
+	<bean id="fbService" class="com.whosup.service.FacebookServiceImpl" />
+	<bean id="lnService" class="com.whosup.service.LinkedInServiceImpl" />
+	<bean id="interactService" class="com.whosup.service.InteractServiceImpl" />
+	<bean id="splitCostService" class="com.whosup.service.SplitCostServiceImpl" />
+	<bean id="commonService" class="com.whosup.service.CommonServiceImpl" />
+	<bean id="discoverService" class="com.whosup.service.DiscoverServiceImpl" />
+
+	<bean id="userDao" class="com.whosup.dao.UserDaoImpl" />
+	<bean id="userContactDao" class="com.whosup.dao.UserContactDaoImpl" />
+	<bean id="userFacebookIdDao" class="com.whosup.dao.UserFacebookIdDaoImpl" />
+	<bean id="userContactInviteDao" class="com.whosup.dao.UserContactInviteDaoImpl" />
+	<bean id="userInterestedEventDao" class="com.whosup.dao.UserInterestedEventDaoImpl" />
+	<bean id="eventDao" class="com.whosup.dao.EventDaoImpl" />
+	<bean id="ideaDao" class="com.whosup.dao.IdeaDaoImpl" />
+	<bean id="userEventInboxDao" class="com.whosup.dao.UserEventInboxDaoImpl" />
+	<bean id="venueDao" class="com.whosup.dao.VenueDaoImpl" />
+	<bean id="userTransactionsDao" class="com.whosup.dao.UserTransactionsDaoImpl" />
+	<bean id="eventHistoryPictureDao" class="com.whosup.dao.EventHistoryPictureDaoImpl" />
+	<bean id="facilityDao" class="com.whosup.dao.FacilityDaoImpl" />
+	<bean id="userAccessTokenDao" class="com.whosup.dao.UserAccessTokenDaoImpl" />
+	<bean id="userSuggestedContactDao" class="com.whosup.dao.UserSuggestedContactDaoImpl" />
+	<bean id="userSuggestedInviteDao" class="com.whosup.dao.UserSuggestedInviteDaoImpl" />
+	<bean id="userContactRequestDao" class="com.whosup.dao.UserContactRequestDaoImpl" />
+	<bean id="userVerifiedMobileNumberDao" class="com.whosup.dao.UserVerifiedMobileNumberDaoImpl" />
+	<bean id="userVerifiedGmailAddressDao" class="com.whosup.dao.UserVerifiedGmailAddressDaoImpl" />
+	<bean id="userVerifiedDomainDao" class="com.whosup.dao.UserVerifiedDomainDaoImpl" />
+	<bean id="iOweDao" class="com.whosup.dao.IOweDaoImpl" />
+	<bean id="owesMeDao" class="com.whosup.dao.OwesMeDaoImpl" />
+	<bean id="userLocationLogDao" class="com.whosup.dao.UserLocationLogDaoImpl" />
+	<bean id="facilityVenueDao" class="com.whosup.dao.FacilityVenueDaoImpl" />
+	<bean id="userEventFeedbackDao" class="com.whosup.dao.UserEventFeedbackDaoImpl" />
+	<bean id="weatherDao" class="com.whosup.dao.WeatherDaoImpl" />
+	<bean id="domainMasterKeyDao" class="com.whosup.dao.DomainMasterKeyDaoImpl" />
+	<bean id="userFrequentSearchDao" class="com.whosup.dao.UserFrequentSearchDaoImpl" />
+	<bean id="regionPopularSearchDao" class="com.whosup.dao.RegionPopularSearchDaoImpl" />
+
+</beans>
